@@ -1,0 +1,29 @@
+.futbol {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100px, 100px, 100px;
+
+    .horizonte {
+        color: white;
+        background: black; 
+        margin: 0px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .camino {
+        color: white;
+        background: black; 
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .personas{
+        color: white;
+        background: black; 
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+}

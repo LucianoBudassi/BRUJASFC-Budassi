@@ -1,0 +1,22 @@
+$colorbg: brown;
+$fontf: arial, helvetica, sans-serif;
+
+.conteinerTemplate{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+@mixin size-btn($h, $w) {
+    height: $h;
+    width: $w;
+    padding: 20px $borde;
+    border-radius: 30px;
+    cursor: pointer;
+}
+@each $heading, $size in (h1: 30px, h2: 50px) {
+
+    #{$heading} {
+        font-size: $size;
+    }
+}
+    

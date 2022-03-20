@@ -1,0 +1,67 @@
+
+.datos {
+    
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+    .tittle {
+        padding: 20px;
+        grid-column-start: 1;
+        grid-column-end: 6 ;
+    }
+    .asociate {
+        padding: 15px;
+        grid-column-start: 1;
+        grid-column-end: 6 ;
+        
+    }
+    .socios {
+        margin: 10px;
+        padding: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        gap: 10px;
+        
+        .botones {
+            font-size: 20px;
+        
+            &:hover {
+                padding:  10px;
+                margin-left: 50px;
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+        .button{
+            
+        
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            display: flex;
+            flex-direction: column;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            gap: 10px;
+            
+            @include size-btn(10px, 15px);
+            
+            
+            &:hover {
+                padding: 10px;
+                transform: scale(1.1);
+                transition: 0.5s;
+                background-color: lightcoral;
+            }   
+        
+        }
+
+    }
+
+   
+}

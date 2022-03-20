@@ -1,0 +1,38 @@
+
+.contacto{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    min-height: 100%;
+    
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    color: white;
+    &--tittle, &--data, &--button{
+        transform: translate(10px, 20px);
+        background-color: gray;
+    }
+    
+    &--tittle {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    &--data {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    &--button {
+        
+        padding: 5p x;
+        margin: 20px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
