@@ -1,3 +1,16 @@
+.conteinerTemplate, .jugadores-tabla, body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
 .jugadores-tabla {
   width: 90%;
   background-color: white;
@@ -180,6 +193,11 @@
       grid-column-start: 1;
   grid-column-end: 3;
   gap: 10px;
+  height: 10px;
+  width: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .datos .socios .button:hover {
@@ -237,9 +255,54 @@
   grid-column-end: 4;
 }
 
-.conteinerTemplate, .jugadores-tabla {
-  max-width: 1200px;
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.galeria {
+  font-family: 'open sans';
+}
+
+.galeria h1 {
+  text-align: center;
+  margin: 20px 0 15px;
+  font-weight: 300;
+}
+
+.galeria .linea {
+  border-top: 5px solid;
+}
+
+.galeria .contendor-imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.galeria .contendor-imagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 300px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.galeria .imagen img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 * {
@@ -248,7 +311,7 @@
 }
 
 body {
-  background-color: brown;
+  background-color: white;
   font-family: arial, helvetica, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,4 +1,4 @@
-$colorbg: brown;
+$colorbg: white;
 $fontf: arial, helvetica, sans-serif;
 
 .conteinerTemplate{
@@ -9,7 +9,7 @@ $fontf: arial, helvetica, sans-serif;
 @mixin size-btn($h, $w) {
     height: $h;
     width: $w;
-    padding: 20px $borde;
+    padding: 20px;
     border-radius: 30px;
     cursor: pointer;
 }
